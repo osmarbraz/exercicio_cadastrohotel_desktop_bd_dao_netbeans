@@ -10,7 +10,7 @@
  - Toda iteração com banco de dados é tratada diretamente pelo DAO.<br>
  - Os dados de configuração(Servidor, Database, Usuario, Senha) da integração do java com o banco de dados estão no arquivo src/dao/DadosBanco.java.<br>
  - Dependência do Driver JDBC foi especificada no arquivo pom.xml.<br>
- - O Driver de conexão com o MySQL e espeficado na classe Conexao.java.<br>
+ - O Driver de conexão com o MySQL e espeficado na classe src/dao/Conexao.java.<br>
  - Crie o banco de dados antes de executar o programa, as especificações da tabela estão no arquivo banco.sql.<br>
  - A pasta src contêm os fontes do projeto.<br>
  - A interface gráfica foi construída **com** o auxílio da IDE NetBeans.<br>
@@ -26,6 +26,7 @@
 
 Uma rede de hotéis chamada Aterrissar necessita de um sistema para desktop em Java para cadastrar os seus hotéis em um banco de dados. As informações referentes a cada hotel que devem ser preenchidas são as seguintes: Nome, Cidade, Quartos, Valor diária e número de estrelas. A tabela e o banco de dados têm o nome “hotel”. A tabela tem a seguinte estrutura:
 
+```
 CREATE TABLE hotel (
 	hotelID         INTEGER NOT NULL AUTO_INCREMENT,    	 
 	nome            VARCHAR(100) NOT NULL,     
@@ -35,6 +36,7 @@ CREATE TABLE hotel (
 	estrelas        INTEGER NOT NULL,     
 	PRIMARY KEY(hotelID)    
 );
+```
 
 O layout do janela é apresentado abaixo:
 
